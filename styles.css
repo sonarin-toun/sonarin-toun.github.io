@@ -1,0 +1,359 @@
+/* Global Style */
+
+body {
+
+}
+
+
+/****** Font ******/
+
+/* Font Family */
+
+h1, h2 {
+    font-family: 'Bellota', cursive, serif;
+}
+
+p, .button:link, .button:visited, .view-more:link, .view-more:visited, figcaption {
+    font-family: 'Bellota Text', cursive, sans-serif;
+}
+
+/* Font Size */
+
+h1 {
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.sub-title {
+    font-size: 40px;
+}
+
+.hero-text {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+p, figcaption {
+    font-size: 20px;
+}
+
+.button:link, .button:visited {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.view-more:link, .view-more:visited {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.quote {
+    font-size: 36px;
+}
+
+.quote-credit {
+    font-size: 30px;
+}
+
+/* Font Color & Weight */
+
+h1, h2 {
+    color:  hsla(16, 94%, 61%, 1);
+    font-weight: 800;
+}
+
+p {
+    color: hsla(210, 24%, 16%, 1);
+}
+
+figcaption {
+    color: hsla(216, 33%, 97%, 1);
+}
+
+.quote, .quote-credit {
+    color:  hsla(16, 94%, 61%, 1);
+}
+
+.button:link, .button:visited {
+    color:hsla(216, 33%, 97%, 1);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.view-more:link, .view-more:visited {
+    color:hsla(210, 24%, 16%, 0.5);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.view-more:hover, .view-more:active {
+    color:  hsla(16, 94%, 61%, 1);
+}
+/****** Background ******/
+
+/* Background Color */
+
+body {
+    background-color:hsla(216, 33%, 97%, 1);
+}
+
+.hero {
+    background-color: hsl(214, 15%, 91%, 1);
+}
+
+svg {
+    fill: hsla(210, 24%, 16%, 0.5);
+}
+
+svg:hover {
+    fill: hsla(16, 94%, 61%, 1);
+}
+
+.button:link, .button:visited {
+    background-color: hsla(16, 94%, 61%, 0.8);
+}
+
+.button:hover, .button:active {
+    background-color: hsla(16, 94%, 61%, 1);
+}
+
+/* Size & Border & Display*/
+
+.button:link, .button:visited {
+    width: 196px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+svg {
+    width: 32px;
+    height: 40px;
+}
+
+/* Shadow */
+
+.button:link, .button:visited {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px 1px 0px #FFB088;
+}
+
+/***** Spacing & Layout *****/
+
+    /* Spacign & Alignment */
+
+    .hero-text {
+        font-size: 24px;
+        margin-top: 48px;
+        margin-bottom: 64px;
+        width: 384px;
+    }
+
+    .button:link, .button:visited {
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .bio-1 p, .bio-2 p, .legacy p {
+        width: 512px;
+        line-height: 1.5;
+    }
+
+    .bio-button {
+        margin-right: 24px;
+    }
+
+    .legacy-button {
+        margin-left: 24px;
+    }
+
+    .bio-1, .legacy {
+        margin-top: 144px;
+    }
+
+    .bio-2 {
+        margin-top: 64px;
+    }
+
+    .bio-title, .legacy-title {
+        margin-bottom: 32px;
+    }
+
+    .read-more {
+        margin-top: 32px;
+    }
+
+    .painting-title {
+        margin-top: 64px;
+        margin-bottom: 48px;
+    }
+
+    .view-more {
+        margin-top: 24px;
+    }
+
+    .blockquote {
+        margin-top: 40px;
+    }
+
+    .quote-credit {
+        margin-top: 32px;
+    }
+
+    .to-top {
+        margin-top: 64px;
+        margin-bottom: 32px;
+        margin-right: 32px;
+    }
+
+    /* Grid */
+
+    /* Hero */
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "content image";
+        }
+
+        .hero-content {
+            grid-area: content;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .hero-img {
+            grid-area: image;
+            justify-self: center;
+            align-self: center;
+            width: 100%;
+        }
+
+    /* Bio 1 */
+
+        .bio-1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "image content";
+        }
+
+        .bio-1-content {
+            grid-area: content;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .bio-1-img {
+            grid-area: image;
+            justify-self: start;
+            align-self: center;
+        }
+
+    /* Bio 2 */
+
+        .bio-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "content image";
+        }
+
+        .bio-2-content {
+            grid-area: content;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .bio-2-img {
+            grid-area: image;
+            justify-self: end;
+            align-self: center;
+        }
+
+    /* Legacy Section */
+
+        .legacy {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "image content";
+        }
+
+        .legacy-content {
+            grid-area: content;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .legacy-img {
+            grid-area: image;
+            justify-self: center;
+            align-self: center;
+            width: 100%;
+        }
+
+    /* Paintings */
+
+        .paintings {
+            display: grid;
+            grid-template-columns: 1fr 256px 512px 256px 1fr;
+            grid-template-rows: auto auto auto auto auto auto;
+            grid-template-areas:    ". title title title ."
+                                    ". painting-1 painting-2 painting-3 ."
+                                    ". painting-1 painting-2 painting-3 ."
+                                    ". . . view-more ."
+                                    ". quote quote quote ."
+                                    ". . . . to-top";
+            grid-column-gap: 16px;
+            justify-items: center;
+        }
+
+        .painting-title {
+            grid-area: title;
+            justify-self: start;
+            align-self: center;
+        }
+
+        .painting-1 {
+            grid-area: painting-1;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .painting-2 {
+            grid-area: painting-2;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .painting-3 {
+            grid-area: painting-3;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .view-more {
+            grid-area: view-more;
+            justify-self: end;
+            align-self: center;
+        }
+
+        .blockquote {
+            grid-area: quote;
+            text-align: center;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .to-top {
+            grid-area: to-top;
+            justify-self: end;
+            align-self: center;
+        }
+
+

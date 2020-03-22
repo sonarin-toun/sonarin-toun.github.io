@@ -638,10 +638,6 @@ img {
     align-items: center;
   }
 
-  .lg\:justify-start {
-    justify-content: flex-start;
-  }
-
   .lg\:flex-1 {
     flex: 1 1 0%;
   }
@@ -699,10 +695,6 @@ img {
     padding-top: 2.5rem;
   }
 
-  .lg\:text-left {
-    text-align: left;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
   }
@@ -750,7 +742,7 @@ img {
     font-size: 1.875rem;
   }
 
-  .xl\:w-2\/5 {
-    width: 40%;
+  .xl\:w-1\/2 {
+    width: 50%;
   }
 }

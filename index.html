@@ -163,31 +163,42 @@
 
             <!--Paintings section-->
 
-            <section class="mx-auto lg:w-4/5">
+            <section class="w-4/5 mx-auto">
 
-                <h2 class="pt-4 mx-auto mb-4 section-title lg:my-5">Paintings</h2>
+                <h2 class="pt-4 mx-auto mb-4 sm:w-4/5 section-title lg:my-5 md:w-full">Paintings</h2>
 
-                <div class="w-4/5 painting-flex lg:w-full lg:-mx-px">
+                <div class="painting-flex md:w-full sm:w-4/5">
                     
-                    <img src="images/paintings/painting-1.jpg" alt="" class="painting-flex-portrait lg:w-1/4">
-                    <img src="images/paintings/painting-2.jpg" alt="" class="hidden painting-flex-landscape md:w-full lg:w-2/4 lg:block">
-                    <img src="images/paintings/painting-3.jpg" alt="" class="painting-flex-portrait lg:w-1/4">
-                    <img src="images/paintings/painting-2.jpg" alt="" class="painting-flex-landscape md:w-full lg:hidden">
+                    <div class="painting-flex-portrait md:w-1/4">
+                        <img src="images/paintings/painting-1.jpg" alt="" class="w-auto rounded-sm">
+                    </div>
+                    
+                    <div class="hidden painting-flex-landscape md:w-2/4 md:block">
+                        <img src="images/paintings/painting-2.jpg" alt="" class="hidden w-auto rounded-sm md:block">
+                    </div>
+                    
+                    <div class="painting-flex-portrait md:w-1/4">
+                        <img src="images/paintings/painting-3.jpg" alt="" class="w-auto rounded-sm">
+                    </div>  
+                    
+                    <div class="painting-flex-landscape md:hidden">
+                        <img src="images/paintings/painting-2.jpg" alt="" class="rounded-sm md:hidden">
+                    </div>
 
                 </div>
                 
-                <div class="w-4/5 mx-auto lg:w-full">
+                <div class="mx-auto my-4 md:w-full sm:w-4/5">
                     
-                    <a class="w-full my-4 lg:my-5 btn" href='https://www.vangoghmuseum.nl/en/search/collection' target="blank">View More</a>
+                    <a class="w-full my-3 btn" href='https://www.vangoghmuseum.nl/en/search/collection' target="blank">View More</a>
 
                 </div>
 
                 <blockquote cite="https://www.goodreads.com/quotes/144204-if-you-truly-love-nature-you-will-find-beauty-everywhere" class="w-4/5 mx-auto text-center text-orange-700">
-                    <p class="my-4 text-lg sm:text-xl lg:text-2xl xl:text-3xl">
+                    <p class="my-4 sm:text-xl lg:text-2xl xl:text-3xl">
                         If you truly love Nature, you
                         will find beauty everywhere.
                     </p>
-                    <p class="mb-5 text-lg lg:text-xl xl:text-2xl">~ Vincent van Gogh</p>
+                    <p class="mb-5 sm:text-lg lg:text-xl xl:text-2xl">~ Vincent van Gogh</p>
                 </blockquote>
                 
                 <div class="w-4/5 pb-5 mx-auto text-orange-700 sm:pb-8 lg:w-full">

@@ -448,7 +448,6 @@ img {
   margin-top: 1px;
   margin-bottom: 1px;
   overflow: hidden;
-  border-radius: 0.125rem;
 }
 
 .painting-flex-landscape {
@@ -457,7 +456,6 @@ img {
   margin-top: 1px;
   margin-bottom: 1px;
   overflow: hidden;
-  border-radius: 0.125rem;
 }
 
 .bg-gray-200 {
@@ -466,6 +464,10 @@ img {
 
 .bg-gray-300 {
   background-color: #e2e8f0;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .flex {
@@ -490,6 +492,11 @@ img {
 
 .m-0 {
   margin: 0;
+}
+
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .my-4 {
@@ -558,12 +565,12 @@ img {
   font-size: 1rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-3\/4 {
@@ -592,6 +599,10 @@ img {
     padding-bottom: 2rem;
   }
 
+  .sm\:text-lg {
+    font-size: 1.125rem;
+  }
+
   .sm\:text-xl {
     font-size: 1.25rem;
   }
@@ -614,6 +625,22 @@ img {
 }
 
 @media (min-width: 768px) {
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-1\/4 {
+    width: 25%;
+  }
+
+  .md\:w-2\/4 {
+    width: 50%;
+  }
 
   .md\:w-full {
     width: 100%;
@@ -662,11 +689,6 @@ img {
     margin-right: auto;
   }
 
-  .lg\:-mx-px {
-    margin-left: -1px;
-    margin-right: -1px;
-  }
-
   .lg\:mb-0 {
     margin-bottom: 0;
   }
@@ -705,14 +727,6 @@ img {
 
   .lg\:w-64 {
     width: 16rem;
-  }
-
-  .lg\:w-1\/4 {
-    width: 25%;
-  }
-
-  .lg\:w-2\/4 {
-    width: 50%;
   }
 
   .lg\:w-2\/5 {

@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Recent Post</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
-    <link href="assets/stylesheets/normalize.css" rel="stylesheet">
-    <link href="assets/stylesheets/styles.css" rel="stylesheet">
+    <link href="../assets/stylesheets/normalize.css" rel="stylesheet">
+    <link href="../assets/stylesheets/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
         <div class="container-head container-head_flex">
 
             <!--Banner Start-->
-            <a class="banner-link" href="index.html">
+            <a class="banner-link" href="../index.html">
                 <div class="banner">
                     <div class="title-container">
                         <h1 class="banner__title title">Living the simple life</h1>
@@ -35,12 +35,10 @@
             <!--Menu Start-->
             <nav class="navigation">
                 <ul class="navigation__menu">
+                    <li class="navigation__item"><a href="../index.html" class="navigation__link">Home</a></li>
+                    <li class="navigation__item"><a href="about.html" class="navigation__link">About Me</a></li>
                     <li class="navigation__item"><a href="#"
-                            class="navigation__link navigation__link_current-page">Home</a></li>
-                    <li class="navigation__item"><a href="pages/about.html" class="navigation__link">About Me</a></li>
-                    <li class="navigation__item"><a href="pages/recent-post.html" class="navigation__link">Recent
-                            Post</a>
-                    </li>
+                            class="navigation__link navigation__link_current-page">Recent Post</a></li>
                 </ul>
             </nav>
             <!--Menu End-->
@@ -64,52 +62,6 @@
             <!--Main Section Start-->
             <main class="site-main">
 
-                <!--Hero Section Start-->
-                <section class="home-paragraph paragraph">
-
-                    <!--Image & Caption Container Start-->
-                    <div class="paragraph_image-caption-container">
-
-                        <div class="paragraph__image-container">
-                            <img class="paragraph__image" src="assets/images/white-desk.jpg"
-                                alt="A white desk with a plant and lamp on top" width="1920" height="1152">
-                        </div>
-
-                        <!--Image Caption Start-->
-                        <div class="caption-main-post">
-                            <ul class="caption__element">
-                                <li class="caption__date"><time datetime="2019-07-03">July 23, 2019</time></li>
-                                <li class="caption__comment">3 comments</li>
-                            </ul>
-                        </div>
-                        <!--Image Caption End-->
-
-                    </div>
-                    <!--Image & Caption Container End-->
-
-                    <!--Text Container Start-->
-                    <div class="paragraph__text-container paragraph__text-container_border">
-
-                        <h2 class="paragraph__title title">Finding simplicity in life</h2>
-
-                        <p class="paragraph_text"><strong>Life can get complicated really quickly,</strong> but it doesn't have to be! There
-                            are
-                            many ways to simplify your life, <a class="paragraph__link" href="#">a few of which we've
-                                explored in
-                                the past.</a> This week we're taking a bit of a approach though, in how you can find
-                            simplicity in the life you already living.</p>
-
-                        <p class="paragraph_text">Things were terrible. I had a job that I hated, a home that I didn't want to live in, and I
-                            couldn't hold a relationship.</p>
-
-                        <a href="#" class="read-more-link subtitle">Continue Reading</a>
-
-                    </div>
-                    <!--Text Container End-->
-
-                </section>
-                <!--Hero Section End-->
-
                 <!--Recent Post 1 Start-->
                 <section class="paragraph">
 
@@ -120,7 +72,64 @@
                         <div class="paragraph__caption-image-container">
 
                             <div class="paragraph__image-container">
-                                <img class="paragraph__image paragraph__image_portrait" src="assets/images/dumpling.jpg"
+                                <img class="paragraph__image paragraph__image_portrait"
+                                    src="../assets/images/white-desk.jpg"
+                                    alt="A white desk with a plant and lamp on top" width="1920" height="1152">
+                            </div>
+
+                            <!--Caption & Title Container Start-->
+                            <div class="paragraph__title-caption-container">
+                                
+                            <h2 class="paragraph__title paragraph_hidden-lg title">Finding simplicity in life</h2>
+
+                            <!--Image Caption Start-->
+                            <div class="caption">
+                                <ul class="caption__element">
+                                    <li class="caption__date"><time datetime="2019-07-03">July 23, 2019</time></li>
+                                    <li class="caption__comment">3 comments</li>
+                                </ul>
+                            </div>
+                            <!--Image Caption End-->
+
+                        </div>
+                        <!--Caption & Title Container End-->
+
+                        </div>
+                        <!--Caption & Image Container End-->
+
+                        <!--Text Container Start-->
+                        <div class="paragraph__text-container paragraph__text-container_flex">
+
+                            <h2 class="paragraph__title paragraph_hidden-sm title">Finding simplicity in life</h2>
+
+                            <p class="paragraph_text">Life can get complicated really quickly, but it doesn't have to be! There are
+                                many ways to simplify your life, a few of which we've
+                                explored in
+                                the past. This week we're taking a bit of a approach though, in how you can find
+                                simplicity in the life you already living.</p>
+
+                            <a class="read-more-link subtitle" href="#">Continue Reading</a>
+
+                        </div>
+                        <!--Text Container End-->
+
+                    </div>
+                    <!--Recent Post Container End-->
+
+                </section>
+                <!--Recent Post 1 End-->
+
+                 <!--Recent Post 2 Start-->
+                 <section class="paragraph">
+
+                    <!--Recent Post Container Start-->
+                    <div class="paragraph__post-container">
+
+                        <!--Caption & Image Container Start-->
+                        <div class="paragraph__caption-image-container">
+
+                            <div class="paragraph__image-container">
+                                <img class="paragraph__image paragraph__image_portrait" src="../assets/images/dumpling.jpg"
                                     alt="Dumplings on the plate" width="2400" height="1440">
                             </div>
 
@@ -162,9 +171,9 @@
                     <!--Recent Post Container End-->
 
                 </section>
-                <!--Recent Post 1 End-->
+                <!--Recent Post 2 End-->
 
-                <!--Recent Post 2 Start-->
+                <!--Recent Post 3 Start-->
                 <section class="paragraph">
 
                     <!--Recent Post Container Start-->
@@ -175,7 +184,7 @@
 
                             <div class="paragraph__image-container">
                                 <img class="paragraph__image paragraph__image_portrait"
-                                    src="assets/images/white-desk-and-chair.jpg" alt="A white desk with a chair"
+                                    src="../assets/images/white-desk-and-chair.jpg" alt="A white desk with a chair"
                                     width="1920" height="1152">
                             </div>
 
@@ -219,9 +228,9 @@
                     <!--Recent Post Container End-->
 
                 </section>
-                <!--Recent Post 2 End-->
+                <!--Recent Post 3 End-->
 
-                <!--Recent Post 3 Start-->
+                <!--Recent Post 4 Start-->
                 <section class="paragraph">
 
                     <!--Recent Post Container Start-->
@@ -232,10 +241,10 @@
 
                             <div class="paragraph__image-container">
                                 <img class="paragraph__image paragraph_hidden-lg"
-                                    src="assets/images/plant-on-glass-vase.jpg" alt="A plant on a glasse vase"
+                                    src="../assets/images/plant-on-glass-vase.jpg" alt="A plant on a glasse vase"
                                     width="1920" height="1152">
                                 <img class="paragraph__image paragraph_hidden-sm paragraph__image_portrait"
-                                    src="assets/images/plant-on-glass-vase-portrait.jpg" alt="A plant on a glasse vase"
+                                    src="../assets/images/plant-on-glass-vase-portrait.jpg" alt="A plant on a glasse vase"
                                     width="895" height="1130">
                             </div>
 
@@ -279,14 +288,13 @@
                     <!--Recent Post Container End-->
 
                 </section>
-                <!--Recent Post 3 End-->
+                <!--Recent Post 4 End-->
 
             </main>
             <!--Main Section End-->
 
         </div>
         <!--Wrapper Main End-->
-
 
         <!--**********************END SECTION***************************-->
 
@@ -304,13 +312,15 @@
                     <!--Post Container Start-->
                     <div class="post__container">
 
-                        <h2 class="sidebar-about__title sidebar__title"><a class="page-link"
-                                href="pages/about.html">About me</a></h2>
+                        <h2 class="sidebar-about__title sidebar__title"><a class="page-link" href="about.html">About
+                                me</a>
+                        </h2>
 
                         <!--Post Start-->
                         <div class="post post_border_none">
-                            <a href="pages/about.html" class="page-link-image">
-                                <img class="post__image" src="assets/images/smiling-man.jpg"
+
+                            <a href="about.html" class="page-link-image">
+                                <img class="post__image" src="../assets/images/smiling-man.jpg"
                                     alt="A smiling man in front of a mountain" width="1920" height="1152">
                             </a>
 
@@ -345,13 +355,12 @@
                     <div class="post__container">
 
                         <!--Post 1 Start-->
-                        <h2 class="sidebar__title"><a class="page-link" href="pages/recent-post.html">Recent Post</a>
-                        </h2>
+                        <h2 class="sidebar__title"><a class="page-link" href="recent-post.html">Recent Post</a></h2>
 
                         <section class="post">
                             <a href="#" class="page-link-image">
-                                <img class="post__image" src="assets/images/dumpling.jpg" alt="Dumplings on the plate"
-                                    width="2400" height="1440">
+                                <img class="post__image" src="../assets/images/dumpling.jpg"
+                                    alt="Dumplings on the plate" width="2400" height="1440">
                             </a>
                             <h3 class="post__title title">Keeping Cooking Simple</h3>
                         </section>
@@ -360,7 +369,7 @@
                         <!--Post 2 Start-->
                         <section class="post">
                             <a href="#" class="page-link-image">
-                                <img class="post__image" src="assets/images/white-desk-and-chair.jpg"
+                                <img class="post__image" src="../assets/images/white-desk-and-chair.jpg"
                                     alt="A white desk with a chair" width="1920" height="1152">
                             </a>
                             <h3 class="post__title title">Simplicity and work</h3>
@@ -370,7 +379,7 @@
                         <!--Post 3 Start-->
                         <section class="post post_border_none">
                             <a href="#" class="page-link-image">
-                                <img class="post__image" src="assets/images/plant-on-glass-vase.jpg"
+                                <img class="post__image" src="../assets/images/plant-on-glass-vase.jpg"
                                     alt="A plant on a glasse vase" width="1920" height="1152">
                             </a>
                             <h3 class="post__title title">Simple decorations</h3>

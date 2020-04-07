@@ -32,7 +32,8 @@
 
 /** Main **/
 
-.paragraph__title {
+.paragraph__title,
+.page-link {
     font-size: 1.25rem;
 }
 
@@ -43,6 +44,10 @@
 
 .caption__element {
     list-style-type: none;
+    font-size: 0.75rem;
+}
+
+.caption__font-size {
     font-size: 0.75rem;
 }
 
@@ -57,23 +62,18 @@
     font-size: 1.25rem;
 }
 
-.post__caption {
-    font-size: 0.875rem;
-}
-
 /** Footer **/
 
 .footer__copyrights,
 .footer__quote {
-    color: #FFFF;
+    color: rgba(255, 255, 255, 0.6);
     text-align: center;
     font-size: 1rem;
-    opacity: 0.5;
 }
 
 .footer__quote {
     font-weight: 700;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 /**************************************************/
@@ -115,6 +115,15 @@
     max-width: 1280px;
 }
 
+.paragraph__title-caption-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.caption {
+    margin-bottom: 1rem;
+}
+
 .caption__element {
     display: flex;
     justify-content: flex-start;
@@ -128,6 +137,8 @@
 .caption__comment {
     padding-left: 0.5rem;
 }
+
+
 
 .paragraph {
     margin: 2rem auto;
@@ -153,12 +164,6 @@
 
 .paragraph_image-caption-container {
     margin-bottom: 1rem;
-}
-
-.paragraph__title-caption-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
 }
 
 .paragraph__image-container {
@@ -241,6 +246,7 @@
 .navigation__link {
     text-decoration: none;
     color: #707070;
+    letter-spacing: 1px;
 }
 
 .navigation__link:hover,
@@ -275,7 +281,7 @@
 .read-more-link {
     font-size: 0.875rem;
     text-decoration: none;
-    letter-spacing: 0.2rem;
+    letter-spacing: 1px;
 }
 
 .read-more-link:hover,
@@ -302,11 +308,84 @@
     filter: blur(1px) grayscale(100%);
 }
 
+@media (min-width: 480px) {
+    .paragraph__title-caption-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
+
 
 
 @media (min-width: 1024px) {
 
+    /** Typography **/
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    /** Body **/
+
+    .paragraph__title {
+        font-size: 1.5rem;
+    }
+
+    .paragraph_text,
+    .paragraph_bold,
+    .paragraph__link,
+    .read-more-link {
+        font-size: 1.125rem;
+    }
+
+    .caption__element {
+        font-size: 0.875rem;
+    }
+
+    /*** Aside **/
+
+    .post__title {
+        font-size: 1.25rem;
+    }
+
+    /** Navigation **/
+
+    .page-link {
+        font-size: 1.25rem;
+    }
+
+    .navigation__link {
+        font-size: 1.25rem;
+    }
+
+    /** Footer **/
+
+    .footer__copyrights,
+    .footer__quote {
+        font-size: 1.25rem;
+    }
+
+    /*******## Layout ##*****/
+
     /** Header **/
+
+    .site-header {
+        padding: 2.5rem 0;
+    }
+
+    .banner {
+        margin-bottom: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .title-container {
+        margin-bottom: 1rem;
+    }
 
     .container-head_flex {
         display: flex;
@@ -321,15 +400,6 @@
 
     .banner__title {
         text-align: left;
-    }
-
-    .navigation__menu {
-        flex-direction: row;
-    }
-
-    .navigation__item {
-        padding-right: 0;
-        margin-left: 3rem;
     }
 
     /** Main **/
@@ -351,7 +421,34 @@
     }
 
     .site-main {
+        margin: 3.5rem auto;
         width: 100%;
+    }
+
+    .paragraph {
+        margin: 2.5rem auto;
+    }
+
+    .paragraph_text {
+        margin: 1.5rem 0;
+    }
+
+    .paragraph_image-caption-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .paragraph__image-container {
+        margin-bottom: 1rem;
+    }
+
+    .paragraph__text-container {
+        margin-top: 1.5rem;
+    }
+
+    .paragraph__text-container_border {
+        border-bottom: solid 2px #EBEBEB;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
     }
 
     .paragraph__post-container {
@@ -370,28 +467,58 @@
     .paragraph__caption-image-container {
         display: flex;
         flex-direction: column;
-        width: 25%;
+        width: 30%;
         overflow: hidden;
     }
 
     .paragraph__text-container_flex {
-        width: 72%;
+        width: 67%;
         margin-top: 0;
     }
 
     .paragraph__image_portrait {
         object-fit: cover;
-        height: 13rem;
+        height: 16rem;
     }
 
-    .paragraph__title-caption-container {
-        display: block;
-    }
+
 
     /** Aside **/
 
     .sidebar {
+        margin: 3.5rem auto;
         width: 100%;
+    }
+
+    .post__container {
+        border: solid 1.25rem #EBEBEB;
+        padding: 1.5rem;
+    }
+
+    .post {
+        padding: 1.5rem 0;
+        border-bottom: solid 2px #EBEBEB;
+    }
+
+    .post_border_none {
+        border: none;
+    }
+
+    /** Footer **/
+
+    .footer__container {
+        padding: 3.5rem;
+    }
+
+    /** Navigation **/
+
+    .navigation__menu {
+        flex-direction: row;
+    }
+
+    .navigation__item {
+        padding-right: 0;
+        margin-left: 2rem;
     }
 
 }

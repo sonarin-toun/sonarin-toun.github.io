@@ -335,6 +335,10 @@
         font-size: 1.5rem;
     }
 
+    .paragraph__subtitle{
+        font-size: 1.25rem;
+    }
+
     .paragraph_text,
     .paragraph_bold,
     .paragraph__link,
@@ -429,7 +433,7 @@
 }
 
 .paragraph_text {
-    margin: 1.5rem 0;
+    margin: 2rem 0;
 }
 
 .paragraph_image-caption-container {
@@ -441,12 +445,12 @@
 }
 
 .paragraph__text-container {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .paragraph__text-container_border {
     border-bottom: solid 2px #EBEBEB;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
     margin-bottom: 2.5rem;
 }
 
@@ -477,7 +481,7 @@
 
 .paragraph__image_portrait {
     object-fit: cover;
-    height: 16rem;
+    height: 20rem;
 }
 
 
